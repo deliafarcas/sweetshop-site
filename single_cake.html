@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/wedges" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffe2e8;
+        }
+        .back_button span {
+            font-family: 'Wedges', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 30px;
+            color: #800036;
+            position:absolute;
+            left: 91.3px;
+            top: 42px
+        }
+        
+        .cloud_border {
+            width: 100%;
+            height: 100px;
+            background: white;
+            clip-path: polygon(
+              0% 50%, 10% 60%, 20% 50%, 30% 60%, 40% 50%, 50% 60%,
+              60% 50%, 70% 60%, 80% 50%, 90% 60%, 100% 50%, 100% 100%, 0% 100%);
+          }
+
+        .contour {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 995px;
+            height: 740.1px;
+            border-radius: 36px;
+            border: none;
+            background-color: #800036;
+            position: absolute;
+            left: 185.5px;
+            top: 211.5px;
+        }
+
+        .white_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 893.3px;
+            height: 366.4px;
+            border-radius: 36px;
+            border: black;
+            border-width: 4px;
+            background-color: white;
+            position: absolute;
+            left: 94.1px;
+            top: 1005.2px;
+        }
+
+        img {
+            display: flex;
+            height: 682.2px;
+            width: 931.7px;
+            position: absolute;
+            border-radius: 16px;
+            left: 215.8px;
+            top: 239.8px;
+        }
+
+        .btn-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        background-color: #ffeef8;
+        position: relative;
+        }
+
+        .btn-cart::after {
+        content: attr(data-quantity);
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        font-size: 15px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s linear;
+        top: 115%;
+        }
+
+        .icon-cart {
+        width: 24.38px;
+        height: 30.52px;
+        transition: .2s linear;
+        }
+
+        .icon-cart path {
+        fill: #b8226d;
+        transition: .2s linear;
+        }
+
+        .btn-cart:hover > .icon-cart {
+        transform: scale(1.2);
+        }
+
+        .btn-cart:hover > .icon-cart path {
+        fill: #ff4e83;
+        }
+
+        .btn-cart:hover::after {
+        visibility: visible;
+        opacity: 1;
+        top: 105%;
+        }
+
+
+        .heartbtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        background-color: #ffeef8;
+        position: relative;
+        }
+
+        .heartbtn::after {
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        font-size: 15px;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s linear;
+        top: 115%;
+        }
+
+        .icon {
+        width: 30px;
+        height: 30px;
+        transition: 0.2s linear;
+        }
+
+        .icon path {
+        fill: #b8226d;
+        transition: 0.2s linear;
+        }
+
+        .heartbtn:hover > .icon {
+        transform: scale(1.2);
+        }
+
+        .heartbtn:hover > .icon path {
+        fill: #ff4e83;
+        }
+
+        .heartbtn:hover::after {
+        visibility: visible;
+        opacity: 1;
+        top: 105%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "back_button">
+        <button>&#60</button>
+        <span>BACK TO SHOPPING</span>
+    </div>
+    <div class = "cloud_border"></div>
+    <div class = "contour"></div>
+    <div style="float:right;display:flex">
+        <a target="_self" href="favourites.html" style="margin-right:30px;" class="heartbtn">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20.503" height="20.625" viewBox="0 0 17.503 15.625">
+            <path id="Fill" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" transform="translate(0 0)"></path>
+          </svg>
+          <!span class="badge">3</span>
+        </a>
+        <a target="_self" href="cart.html" class="btn-cart">
+          <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+            <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+          </svg>
+          <!span class="badge">2</span>
+        </a>
+    </div>
+    <img src = https://i.pinimg.com/736x/33/f3/fc/33f3fc77f207f58e8dcfeef58d491b9a.jpg>
+    <div class = "white_container"></div>
+</body>
+</html>
