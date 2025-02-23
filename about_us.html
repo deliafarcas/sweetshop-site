@@ -7,26 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.cdnfonts.com/css/wedges" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Knewave&display=swap" rel="stylesheet">
                 
 </head>
 <body>
-   
-    <div class = "back_button">
+    <div class = "header">
+        <div class = "back_button">
         <button>&#60</button>
         <span>BACK TO SHOPPING</span>
+        </div>
     </div>
-    <div class = "cream_rectangle">
+    <div class = "content">
+         <div class = "cream_rectangle">
+        </div>
+        <div class = "white_rectangle">
+        </div>
+        <div class = "band_1">
+        </div>
+        <div class = "band_2"></div>
+        <div class="image-container">
+            <img src=images/logo.png>
+            <div class="text-overlay">About us</div>
+        </div>
     </div>
-    <div class = "white_rectangle">
-    </div>
-    <div class = "band_1">
-    </div>
-    <div class = "band_2"></div>
-    <img src=https://i.pinimg.com/736x/71/cc/bd/71ccbdba3b39e63734d0de39b17a4171.jpg>
+   
     <style>
         @import url('https://fonts.cdnfonts.com/css/wedges');             
         body {
-            background-color: #ffcbcc;
+            background-color:#ffcbcc ;
+        }
+        .content {
+            align-items: center;
+            justify-content: center;
         }
        .back_button span {
             font-family: 'Wedges', sans-serif;
@@ -85,13 +99,42 @@
             left: 44.8px;
             top: 136.4px;
         }
-        img {
+        .image-container {
+            position: absolute;
+            display: inline-block;
+            left: 596.6px;
+            top: 76.8px;
+        }
+
+        .image-container img {
             display: flex;
             height: 145px;
             width: 145px;
+            position: relative;
+            
+        }
+        .text-overlay {
             position: absolute;
-            left: 596.6px;
-            top: 76.8px;
+            top: 15%;
+            left: 55%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            font-family: "Cherry Bomb One", serif;
+            font-size: 31px;
+            color: #e798c5;
+            text-shadow: 0 0 10px #b8226d, 0 0 20px #b8226d, 0 0 40px #b8226d;
+        }
+        
+        .header {
+            width: 100%;
+            display: flex;
+            background-color: #ffcbcc;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
         }
     </style>
 </body>
