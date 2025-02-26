@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://fonts.cdnfonts.com/css/wedges" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Knewave&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,7 +14,6 @@
         width: 100%;
         display: flex;
         background-color: white;
-        padding: 20px;
         justify-content: space-between;
         align-items: center;
         position: absolute;
@@ -33,26 +33,53 @@
             align-items:center;
         }
 
-        .back_button span {
-            font-family: 'Wedges', sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 30px;
-            color: #800036;
-            position:relative;
-            
-        }
+    
     .header img {
         display: flex;
         width: 115.2px;
         height: 115.2px;
         position: relative;
-        top: 0;
-        right: 0;
+        top: 1%;
+        right: 1%;
     }
     body{
-        background-color: white;
+        background-color: pink;
     }
+    .fav_element {
+        background-color: #ffeef8;
+        display: flex;
+        width: auto;
+        height: 12%;
+        position:absolute;
+        border-radius: 15px;
+        left: 1%;
+        right: 1%;
+        top: 30%;
+    }
+    .fav_element img{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        width: auto;
+        height: 80%;
+        border-radius: 16px;
+    }
+    .favourites {
+        display: flex;
+        justify-content: center;  /* Centers horizontally */
+        align-items: center;
+        position: absolute;  /* Use absolute to place it precisely */
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);  /* Perfect centering */
+        color: #bd90a1;
+        font-family: "Cherry Bomb One", serif;
+        font-size: 40px;  /* Corrected font size */
+        text-align: center;
+        width: 100%;  /* Ensures the element spans the full width */
+    }
+
 </style>
 </head>
 <body>
@@ -64,9 +91,12 @@
         <img src=images/logo.png>
     </div>  
     <div class = "content">
-
+        <div class = "favourites">Favourites</div>
+        <div class = "fav_element">
+            <img src = images/tort_caise.jpg>
+            <div class = "fav_cake">Tort cu caise</div>
+        </div>
+        
     </div>
-    
-    
 </body>
 </html>
