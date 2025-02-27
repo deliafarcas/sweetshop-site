@@ -7,7 +7,10 @@
     <link href="https://fonts.cdnfonts.com/css/wedges" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Knewave&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 <style>
 
     .header {
@@ -36,52 +39,109 @@
     
     .header img {
         display: flex;
-        width: 115.2px;
-        height: 115.2px;
+        width: 110px;
+        height: 110px;
         position: relative;
         top: 1%;
         right: 1%;
     }
     body{
-        background-color: pink;
+        background-image: url('images/fundal_favourites.png');
+        background-attachment: fixed; /* Makes the background stay while scrolling */
+        background-size: cover;
     }
-    .fav_element {
-        background-color: #ffeef8;
+
+    label img{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0px;
+        left: 10px;
+        width: 75px;
+        height: 75px;
+        border-radius: 16px;
+    }
+
+    .favourites {
         display: flex;
+        justify-content: center;  
+        align-items: center;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #bd90a1;
+        font-family: "Cherry Bomb One", serif;
+        font-size: 40px; 
+        text-align: center;
+        width: 100%; 
+    }
+
+    label {
         width: auto;
         height: 12%;
         position:absolute;
         border-radius: 15px;
         left: 1%;
         right: 1%;
-        top: 30%;
-    }
-    .fav_element img{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        width: auto;
-        height: 80%;
-        border-radius: 16px;
-    }
-    .favourites {
+        top:30%;
+        background-color: #ffeef8;
         display: flex;
-        justify-content: center;  /* Centers horizontally */
         align-items: center;
-        position: absolute;  /* Use absolute to place it precisely */
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);  /* Perfect centering */
-        color: #bd90a1;
-        font-family: "Cherry Bomb One", serif;
-        font-size: 40px;  /* Corrected font size */
+        cursor: pointer;
+        user-select: none;
+        color: black;
+        padding: 10px 20px;
+        gap: 60px;
+    }
+
+    label span{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 23px;
+        flex-grow: 1;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked + label svg {
+        fill: #ff4e83;
+        stroke: #ff4e83;
+        animation: heartButton 1s;
+        }
+
+        @keyframes heartButton {
+        0% {
+        transform: scale(1);
+        }
+
+        25% {
+        transform: scale(1.3);
+        }
+
+        50% {
+        transform: scale(1);
+        }
+
+        75% {
+        transform: scale(1.3);
+        }
+
+        100% {
+        transform: scale(1);
+        }
+        }
+
+    .footer {
         text-align: center;
-        width: 100%;  /* Ensures the element spans the full width */
+        padding: 10px;
     }
 
 </style>
 </head>
+<div>ksdhabvljh</div>
 <body>
     <div class = "header">
         <div class = "back_button">
@@ -92,11 +152,18 @@
     </div>  
     <div class = "content">
         <div class = "favourites">Favourites</div>
-        <div class = "fav_element">
-            <img src = images/tort_caise.jpg>
-            <div class = "fav_cake">Tort cu caise</div>
-        </div>
-        
+            <!-- From Uiverse.io by barisdogansutcu --> 
+    <input type="checkbox" checked="checked" id="favorite" name="favorite-checkbox" value="favorite-button">
+    <label for="favorite" class="container">
+        <img src = images/tort_caise.jpg>
+        <span>Tort cu caise</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+    <div class="action">
     </div>
+    </label>
+        </div>
+        <!--daca nu iese cu inima nu i nimica. facem fara. nu te focusa pe asta acum. fa paginile responsiv. toate paginile.-->
+    </div>
+    <footer>@tea.srl</footer>
 </body>
 </html>

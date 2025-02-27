@@ -23,6 +23,7 @@
         
         .contour {
             display: flex;
+            align-self: center;
             align-items: center;
             justify-content: center;
             width: 995px;
@@ -31,8 +32,10 @@
             border: none;
             background-color: #800036;
             position: absolute;
-            left: 185.5px;
-            top: 211.5px;
+            left: 10%;
+            right: 10%;
+            top: 30%;
+            
         }
 
         .white_container {
@@ -46,18 +49,18 @@
             border-width: 4px;
             background-color: white;
             position: absolute;
-            left: 94.1px;
-            top: 1005.2px;
+            left: 6%;
+            top: 155%;
         }
 
-        img {
+        .contour img {
             display: flex;
             height: 682.2px;
             width: 931.7px;
-            position: absolute;
+            position: relative;
+            justify-content: center;
             border-radius: 16px;
-            left: 215.8px;
-            top: 239.8px;
+        
         }
 
         .btn-cart {
@@ -231,6 +234,7 @@
         height: 100%;
         margin: 0;
         display: grid;
+        justify-content: center;
     }
     
     .footer {
@@ -263,8 +267,10 @@
         </div>
     </div>  
     <div class = "content">
-        <div class = "contour"></div>
-        <img src = https://i.pinimg.com/736x/33/f3/fc/33f3fc77f207f58e8dcfeef58d491b9a.jpg>
+        <div class = "contour">
+            <img src = https://i.pinimg.com/736x/33/f3/fc/33f3fc77f207f58e8dcfeef58d491b9a.jpg>
+        </div>
+        
         <div class = "white_container" style = "float:left"></div>
         <div class = "button-container">
             <button class = "add_button">Add to favourite💗</button>
