@@ -14,47 +14,81 @@
         @import url('https://fonts.cdnfonts.com/css/wedges');             
         body {
             background-color:#ffcbcc ;
+
         }
         .content {
             align-items: center;
             justify-content: center;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
         }
-       .header .back_button span {
+        .back_to_shopping {
             font-family: 'Wedges', sans-serif;
             font-weight: 400;
             font-style: normal;
             font-size: 30px;
             color: #800036;
-            position:absolute;
+            position: absolute;
+            top: 30%;
+            left: 5%;
+            align-items:center;
+        }
+
+        .prev{
+            font-family: 'Wedges', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 45px;
+            color: #800036;
+            position: absolute;
             align-items: center;
+            top: 20%;
+            left: 2%;
+            float:left;
+            cursor: pointer;
+            width: auto;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            bottom:15px;
+        }
+
+        .prev:hover{
+            color:#db5397;
         }
         .cream_rectangle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 1274.2px;
-            height: 607.2px;
+            width: 1150px;
+            height: 600px;
             border-radius: 36px;
             border: none;
             background-color: #ffeef8;
             position: absolute;
-            left: 45.9px;
-            top: 111px;
-        }
-        .white_rectangle {
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%, -50%);
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 1177.7px;
-            height: 471.5px;
+        }
+        .white_rectangle {
+            width: 1100px;
+            height: 550px;
             border-radius: 36px;
             border: none;
             background-color: white;
             position: absolute;
-            left: 91.3px;
-            top: 203.9px;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .band_1 {
+        /*.band_1 {
             display: flex;
             width: 1275.3px;
             height: 8.9px;
@@ -73,6 +107,23 @@
             background-color: #f7dc6f;
             position: absolute;
             left: 44.8px;
+            top: 136.4px;
+        }*/
+        .cream_rectangle .band_1 {
+            width: calc(100% - 89.6px);
+            height: 8.9px;
+            background-color: #f7dc6f;
+            position: absolute;
+            right: 44.8px;
+            top: 149.3px;
+        }
+
+        .cream_rectangle .band_2 {
+            width: calc(100% - 89.6px);
+            height: 8.9px;
+            background-color: #f7dc6f;
+            position: absolute;
+            right: 44.8px;
             top: 136.4px;
         }
         .image-container {
@@ -107,29 +158,29 @@
             background-color: #ffcbcc;
             top: 0;
             left: 0;
-            padding: 20px;
             justify-content: space-between;
             align-items: center;
             position: absolute;
             z-index: 2;
         }
+
     </style>
 </head>
 <body>
     <div class = "header">
-        <div class = "back_button">
-        <button>&#60</button>
-        <span>BACK TO SHOPPING</span>
+        <div style="float:left;">
+            <a target="_self" class="prev" herf="homepage.html">&#11207</a>
         </div>
+        <div class = "back_to_shopping">BACK TO SHOPPING</div>
     </div>
     <div class = "content">
          <div class = "cream_rectangle">
+            <div class = "band_1"></div>
+            <div class = "band_2"></div>
         </div>
         <div class = "white_rectangle">
         </div>
-        <div class = "band_1">
-        </div>
-        <div class = "band_2"></div>
+        
         <div class="image-container">
             <img src=images/logo.png>
             <div class="text-overlay">About us</div>
